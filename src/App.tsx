@@ -7,7 +7,6 @@ import Testimonials from "./components/Testimonials";
 import InstagramGrid from "./components/InstagramGrid";
 import WhatsAppCTA from "./components/WhatsAppCTA";
 import BulkOrder from "./components/BulkOrder";
-import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import OccasionsPage from "./components/OccasionsPage";
 import GalleryPage from "./components/GalleryPage";
