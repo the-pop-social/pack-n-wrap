@@ -184,7 +184,7 @@ export default function Showcase({
           <div className="relative overflow-hidden">
             <div
               ref={carouselRef}
-              className="grid w-full grid-flow-col auto-cols-[calc((100%-4.5rem-1px)/4)] gap-6 overflow-x-auto scroll-smooth pb-2 no-scrollbar"
+              className="grid w-full grid-flow-col auto-cols-[100%] sm:auto-cols-[calc((100%-1.5rem)/2)] lg:auto-cols-[calc((100%-4.5rem-1px)/4)] gap-6 overflow-x-auto scroll-smooth pb-2 no-scrollbar"
               aria-label="Best sellers carousel"
             >
               {displayHampers.map((hamper) => (
