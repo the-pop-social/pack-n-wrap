@@ -66,7 +66,7 @@ export default function InstagramGrid() {
             href="https://www.instagram.com/pack_and_wrap_/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-primary text-primary hover:bg-primary hover:text-white font-sans text-xs tracking-wider uppercase font-semibold px-8 py-4.5 rounded-full transition-all duration-300 shadow-sm active:scale-95"
+            className="inline-flex items-center p-5 gap-2 border border-primary text-primary hover:bg-primary hover:text-white font-sans text-xs tracking-wider uppercase font-semibold px-8 py-4.5 rounded-full transition-all duration-300 shadow-sm active:scale-95"
           >
             <span>See More On Instagram</span>
             <ExternalLink className="w-3.5 h-3.5" />
