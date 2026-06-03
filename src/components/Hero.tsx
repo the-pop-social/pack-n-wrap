@@ -37,7 +37,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           src="./images/hero.jpg"
           alt="Premium Personalized Gift Hamper Curation"
           fetchPriority="high"
-          className="w-full h-full object-cover object-center transform scale-105 animate-[scaleIn_20s_ease-out_forwards]"
+          className="w-full h-full object-cover object-center transform scale-105"
         />
         {/* Subtle dark gradient overlay */}
         <div className="absolute inset-0 z-10 gradient-overlay-dark" />
