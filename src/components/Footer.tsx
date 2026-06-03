@@ -1,4 +1,11 @@
-import { MessageCircle, Instagram, Mail, Phone, MapPin, Heart } from "lucide-react";
+import {
+  MessageCircle,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+  Heart,
+} from "lucide-react";
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -11,7 +18,8 @@ export default function Footer({ onNavigate }: FooterProps) {
   };
 
   const instagramUrl = "https://www.instagram.com/pack_and_wrap_/";
-  const whatsappUrl = "https://wa.me/919999999999?text=Hi%20Pack%20%26%20Wrap%2C%20I'm%20interested%20in%20creating%20a%20personalized%20gift%20hamper%21";
+  const whatsappUrl =
+    "https://wa.me/919999999999?text=Hi%20Pack%20%26%20Wrap%2C%20I'm%20interested%20in%20creating%20a%20personalized%20gift%20hamper%21";
 
   return (
     <footer className="bg-charcoal text-white/80 pt-16 pb-8 border-t border-primary/10">
@@ -37,7 +45,9 @@ export default function Footer({ onNavigate }: FooterProps) {
               </div>
             </a>
             <p className="text-xs font-sans font-light text-white/60 leading-relaxed mb-6">
-              Thoughtfully curated hampers and platters crafted for birthdays, anniversaries, weddings, baby showers, and life's most memorable moments.
+              Thoughtfully curated hampers and platters crafted for birthdays,
+              anniversaries, weddings, baby showers, and life's most memorable
+              moments.
             </p>
             {/* Social Icons */}
             <div className="flex gap-4">
@@ -65,7 +75,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           {/* Quick Links */}
           <div>
             <h4 className="font-serif text-base font-semibold text-white tracking-wide mb-6">
-              Collections
+              Quick Links
             </h4>
             <ul className="space-y-3 font-sans text-xs">
               <li>
@@ -88,33 +98,6 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
               <li>
                 <a
-                  href="#why-us"
-                  onClick={(e) => handleNavClick("why-us", e)}
-                  className="hover:text-primary transition-colors duration-300 font-light"
-                >
-                  Why Pack & Wrap
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#how-it-works"
-                  onClick={(e) => handleNavClick("how-it-works", e)}
-                  className="hover:text-primary transition-colors duration-300 font-light"
-                >
-                  How It Works
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Information Links */}
-          <div>
-            <h4 className="font-serif text-base font-semibold text-white tracking-wide mb-6">
-              Customer Love
-            </h4>
-            <ul className="space-y-3 font-sans text-xs">
-              <li>
-                <a
                   href="#testimonials"
                   onClick={(e) => handleNavClick("testimonials", e)}
                   className="hover:text-primary transition-colors duration-300 font-light"
@@ -124,20 +107,36 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
               <li>
                 <a
-                  href="#faq"
-                  onClick={(e) => handleNavClick("faq", e)}
-                  className="hover:text-primary transition-colors duration-300 font-light"
-                >
-                  FAQ Section
-                </a>
-              </li>
-              <li>
-                <a
                   href="#instagram"
                   onClick={(e) => handleNavClick("instagram", e)}
                   className="hover:text-primary transition-colors duration-300 font-light"
                 >
                   Instagram Feed
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-serif text-base font-semibold text-white tracking-wide mb-6">
+                Customer Service
+            </h4>
+            <ul className="space-y-3 font-sans text-xs">
+              <li>
+                <a
+                  href="#instagram"
+                  onClick={(e) => handleNavClick("contact", e)}
+                  className="hover:text-primary transition-colors duration-300 font-light"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#instagram"
+                  onClick={(e) => handleNavClick("bulk", e)}
+                  className="hover:text-primary transition-colors duration-300 font-light"
+                >
+                  Bulk Orders
                 </a>
               </li>
             </ul>
@@ -155,13 +154,19 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="tel:+919999999999" className="hover:text-primary transition-colors">
+                <a
+                  href="tel:+919999999999"
+                  className="hover:text-primary transition-colors"
+                >
                   +91 99999 99999
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="mailto:hello@packandwrap.com" className="hover:text-primary transition-colors">
+                <a
+                  href="mailto:hello@packandwrap.com"
+                  className="hover:text-primary transition-colors"
+                >
                   hello@packandwrap.com
                 </a>
               </li>
@@ -173,7 +178,9 @@ export default function Footer({ onNavigate }: FooterProps) {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans font-light text-white/40">
           <p>© 2026 Pack & Wrap. All Rights Reserved.</p>
           <p className="flex items-center gap-1">
-            Made with <Heart className="w-3.5 h-3.5 fill-accent stroke-accent text-accent" /> for memorable gifting.
+            Made with{" "}
+            <Heart className="w-3.5 h-3.5 fill-accent stroke-accent text-accent" />{" "}
+            for memorable gifting.
           </p>
         </div>
       </div>
